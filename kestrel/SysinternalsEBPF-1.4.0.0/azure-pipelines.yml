@@ -1,0 +1,33 @@
+# Azure build pipelines for Sysinternalsebpf
+trigger:
+    branches:
+      include:
+        - release/*
+        - main
+      exclude:
+        - dev/*
+        - test/*
+
+pr:
+- main
+
+stages:
+ - stage: "Build"
+   jobs:
+    - job: "Build_Sysinternalsebpf_Ubuntu_20_04_Package"
+      pool:
+        vmImage: "ubuntu-20.04"
+      steps:
+      - checkout: self
+        persistCredentials: true
+
+      - script: |
+          chmod +x .container/install-ubuntu-dependencies.sh
+          .container/install-ubuntu-dependencies.sh
+        displayName: "Install pre-reqs for Ubuntu"
+
+      - template: templates/build.yaml
+        parameters:
+          srcPath: '.'
+          runStaticAnalysis: true
+      displayName: "Build Sysinternalsebpf"
