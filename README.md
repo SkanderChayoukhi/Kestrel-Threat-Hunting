@@ -30,5 +30,5 @@ Use infected devices for botnets, DDoS attacks, or malware propagation.
 #### Detection
 Monitor coordinated high-volume data flows and behavioral anomalies.
 ### Notes
-#### * This scenario highlights key threats in 5G networks, including smishing campaigns, encrypted DNS-based C2 communication, and large-scale exploitation.
-#### * Detection strategies emphasize behavioral analysis and anomaly detection while ensuring user privacy.
+* ####  This scenario highlights key threats in 5G networks, including smishing campaigns, encrypted DNS-based C2 communication, and large-scale exploitation.
+* ####  Detection strategies emphasize behavioral analysis and anomaly detection while ensuring user privacy.
