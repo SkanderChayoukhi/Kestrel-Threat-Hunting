@@ -1,8 +1,8 @@
 # Kestrel-Threat-Hunting
 
-## Résumé du projet
+## Project Summary
 
-Le projet consiste à mettre en œuvre une solution de threat hunting (chasse aux menaces) en utilisant le langage Kestrel et le format STIX, dans le cadre de la sécurisation des réseaux 5G. Il s'agit d'un nouveau projet, ce qui signifie qu'il n'existe pas encore de ressources d'apprentissage supplémentaires, à l'exception des documentations officielles fournies. De plus, il n'y a pas d'exemples de scripts existants pour servir de guide ou de référence, ce qui implique que le développement des scripts a été fait sans modèle préétabli. Le but est de développer des scripts automatisés capables de détecter des menaces potentielles sur les réseaux, tout en assurant la virtualisation des environnements de test pour évaluer la performance des solutions développées.
+The project involves implementing a threat hunting solution using the Kestrel language and the STIX format, within the context of securing 5G networks. This is a new project, meaning there are no additional learning resources available apart from the official documentation provided. Moreover, there are no existing script examples to serve as a guide or reference, which means the script development was carried out without any predefined models. The goal is to develop automated scripts capable of detecting potential threats on the networks, while ensuring the virtualization of testing environments to evaluate the performance of the solutions developed.
 
 
 ## 5G Attack Scenario: Multi-Stage Threat Overview
