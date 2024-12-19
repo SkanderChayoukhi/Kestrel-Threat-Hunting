@@ -1,0 +1,89 @@
+{
+  "type": "bundle",
+  "id": "bundle--f8b2c09e-6c6d-4e4e-b95b-781289d9f234",
+  "spec_version": "2.1",
+  "objects": [
+    {
+      "type": "observed-data",
+      "id": "observed-data--5b8b50dc-2170-445d-b93f-c8072443b302",
+      "created": "2024-12-05T10:15:30.000Z",
+      "modified": "2024-12-05T10:15:30.000Z",
+      "first_observed": "2024-12-05T10:14:30.000Z",
+      "last_observed": "2024-12-05T10:15:00.000Z",
+      "number_observed": 1,
+      "objects": {
+        "0": {
+          "type": "network-traffic",
+          "id": "network-traffic--cc23c937-3a0e-4357-8c83-24e606e9ec6f",
+          "start": "2024-12-05T10:14:30.000Z",
+          "end": "2024-12-05T10:15:00.000Z",
+          "src_ref": "ipv4-addr--f16bc3ae-c409-4f89-b51f-d4edba5e835b",
+          "dst_ref": "ipv4-addr--ab12c3de-56ef-7890-1234-fedcba987654",
+          "src_port": 5050,
+          "dst_port": 5060,
+          "protocols": ["sip", "sms"],
+          "extensions": {
+            "x-5g-sms-details": {
+              "smsc": "+1234567890",
+              "sender": "+1987654321",
+              "receiver": "+1098765432",
+              "message_content": "Hello, this is a test SMS log in 5G.",
+              "message_type": "MO"  
+            }
+          }
+        },
+        "1": {
+          "type": "ipv4-addr",
+          "id": "ipv4-addr--f16bc3ae-c409-4f89-b51f-d4edba5e835b",
+          "value": "192.168.1.100"
+        },
+        "2": {
+          "type": "ipv4-addr",
+          "id": "ipv4-addr--ab12c3de-56ef-7890-1234-fedcba987654",
+          "value": "10.0.0.1"
+        }
+      }
+    },
+    {
+      "type": "observed-data",
+      "id": "observed-data--2dc5243b-d1ab-4a90-a854-567fc77d3989",
+      "created": "2024-12-05T10:16:00.000Z",
+      "modified": "2024-12-05T10:16:00.000Z",
+      "first_observed": "2024-12-05T10:15:30.000Z",
+      "last_observed": "2024-12-05T10:15:50.000Z",
+      "number_observed": 1,
+      "objects": {
+        "0": {
+          "type": "network-traffic",
+          "id": "network-traffic--d3292bb9-0911-485e-aabc-894f5327b1b6",
+          "start": "2024-12-05T10:15:30.000Z",
+          "end": "2024-12-05T10:15:50.000Z",
+          "src_ref": "ipv4-addr--e78e7e16-0e9f-4b77-a1c3-d9f90aaf3b77",
+          "dst_ref": "ipv4-addr--c8a1b032-e1a5-4e7c-9c11-09c5df8f4d19",
+          "src_port": 7070,
+          "dst_port": 7090,
+          "protocols": ["sip", "sms"],
+          "extensions": {
+            "x-5g-sms-details": {
+              "smsc": "+1234567890",
+              "sender": "+1987654322",
+              "receiver": "+1098765433",
+              "message_content": "Second SMS log entry.",
+              "message_type": "MT"  
+            }
+          }
+        },
+        "1": {
+          "type": "ipv4-addr",
+          "id": "ipv4-addr--e78e7e16-0e9f-4b77-a1c3-d9f90aaf3b77",
+          "value": "192.168.2.100"
+        },
+        "2": {
+          "type": "ipv4-addr",
+          "id": "ipv4-addr--c8a1b032-e1a5-4e7c-9c11-09c5df8f4d19",
+          "value": "10.0.0.2"
+        }
+      }
+    }
+  ]
+}

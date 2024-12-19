@@ -1,0 +1,31 @@
+{
+  "type": "observed-data",
+  "id": "observed-data--abcd1234-5678-90ef-1234-567890abcdef",
+  "created": "2024-12-11T10:05:00Z",
+  "modified": "2024-12-11T10:05:00Z",
+  "objects": {
+    "0": {
+      "type": "network-traffic",
+      "src_ref": "ipv4-addr--5678abcd-1234-90ef-5678-1234567890ab",
+      "dst_ref": "ipv4-addr--1234abcd-5678-90ef-5678-abcdef123456",
+      "protocols": ["http"],
+      "extensions": {
+        "http-request-ext": {
+          "request_method": "GET",
+          "request_value": "/malicious-content",
+          "request_header": {
+            "User-Agent": "Mozilla/5.0"
+          }
+        }
+      }
+    },
+    "1": {
+      "type": "ipv4-addr",
+      "value": "192.0.2.1"
+    },
+    "2": {
+      "type": "ipv4-addr",
+      "value": "192.0.2.2"
+    }
+  }
+}

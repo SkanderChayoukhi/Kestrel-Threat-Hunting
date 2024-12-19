@@ -1,0 +1,64 @@
+{
+    "type": "bundle",
+    "id": "bundle--b5c5e4db-1234-4c97-b7e1-3b7d4a8c1e00",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--c03b3c54-5f20-40e8-99a3-5679b8e8d5d3",
+            "name": "Malicious Actor",
+            "identity_class": "individual",
+            "created": "2024-12-11T12:00:00.000Z",
+            "modified": "2024-12-11T12:00:00.000Z"
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--f2b3d4a6-9e12-4b44-a22d-1c917b5631c5",
+            "name": "Smishing",
+            "description": "The attacker uses malicious SMS messages to deceive the victim into providing sensitive information or downloading malware.",
+            "created": "2024-12-11T12:00:00.000Z",
+            "modified": "2024-12-11T12:00:00.000Z"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--8a11de2c-dabc-4e12-b8f1-93b2ab4c64c7",
+            "created": "2024-12-11T12:00:00.000Z",
+            "modified": "2024-12-11T12:00:00.000Z",
+            "first_observed": "2024-12-10T14:35:00.000Z",
+            "last_observed": "2024-12-10T14:35:00.000Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "network-traffic",
+                    "id": "network-traffic--7df6a7e6-8b9e-4a5f-8c1b-ef3e7a5f1111",
+                    "src_ref": "user-account--f6c2a4d4-2f2b-43b4-b2d1-c2b65f66e772",
+                    "dst_ref": "user-account--21f1e4c1-89a2-456a-812d-dfba772ae5d5",
+                    "src_port": 0,
+                    "dst_port": 0,
+                    "protocols": ["sms"],
+                    "content": "Your account is locked. Visit http://malicious-link.example to restore access."
+                },
+                "user-account--f6c2a4d4-2f2b-43b4-b2d1-c2b65f66e772": {
+                    "type": "user-account",
+                    "id": "user-account--f6c2a4d4-2f2b-43b4-b2d1-c2b65f66e772",
+                    "user_id": "+1234567890",
+                    "account_type": "phone-number"
+                },
+                "user-account--21f1e4c1-89a2-456a-812d-dfba772ae5d5": {
+                    "type": "user-account",
+                    "id": "user-account--21f1e4c1-89a2-456a-812d-dfba772ae5d5",
+                    "user_id": "+0987654321",
+                    "account_type": "phone-number"
+                }
+            }
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--9f63e4de-d1bc-42f4-89e5-c7de232a9271",
+            "created": "2024-12-11T12:00:00.000Z",
+            "modified": "2024-12-11T12:00:00.000Z",
+            "pattern": "[network-traffic:content = 'Your account is locked. Visit http://malicious-link.example to restore access.']",
+            "pattern_type": "stix",
+            "valid_from": "2024-12-10T14:35:00.000Z"
+        }
+    ]
+}

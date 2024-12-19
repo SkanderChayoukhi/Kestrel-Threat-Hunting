@@ -1,0 +1,118 @@
+{
+    "type": "bundle",
+    "id": "bundle--ba4e815d-dd60-4f9b-bd06-edda52e71ce3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f8b6ee06-9176-40b8-8127-f3d1ac0b30d6",
+            "created": "2019-08-23T14:40:59.719Z",
+            "modified": "2019-08-23T14:40:59.719Z",
+            "name": "splunk",
+            "identity_class": "system"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--5fc544cd-515e-41cc-829e-05b3379bd36c",
+            "created": "2019-08-23T14:38:59.000Z",
+            "modified": "2019-08-23T14:38:59.000Z",
+            "created_by_ref": "identity--f8b6ee06-9176-40b8-8127-f3d1ac0b30d6",
+            "first_observed": "2019-08-23T14:38:59.000Z",
+            "last_observed": "2019-08-23T14:38:59.000Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "network-traffic",
+                    "src_ref": "1",
+                    "dst_ref": "2",
+                    "src_port": 1220,
+                    "dst_port": 1120,
+                    "protocols": ["sms"]
+                },
+                "1": {
+                    "type": "user-account",
+                    "user_id": "attaquant",
+                    "account_login": "attaquant"
+                },
+                "2": {
+                    "type": "domain-name",
+                    "value": "site.douteux.com"
+                },
+                "3": {
+                    "type": "url",
+                    "value": "https://jetehack.fr"
+                }
+            }
+        }
+    ]
+}
+
+{
+    "type": "bundle",
+    "id": "bundle--4ab84de8-98c7-4a9c-9ff6-f39be7c79a8e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--b3a4c6e0-dc69-4f91-8154-31bfe1d85b37",
+            "created": "2024-12-12T15:00:00.000Z",
+            "modified": "2024-12-12T15:00:00.000Z",
+            "name": "5G Network Gateway",
+            "identity_class": "infrastructure"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--a7db3b5c-6d1c-4b9e-8b3a-6f7e716c9fd1",
+            "created_by_ref": "identity--b3a4c6e0-dc69-4f91-8154-31bfe1d85b37",
+            "created": "2024-12-12T15:05:00.000Z",
+            "modified": "2024-12-12T15:05:00.000Z",
+            "first_observed": "2024-12-12T15:04:45.000Z",
+            "last_observed": "2024-12-12T15:04:45.000Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "203.0.113.1",
+                    "description": "Sender's IP address"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.100.2",
+                    "description": "Recipient's device IP address"
+                },
+                "2": {
+                    "type": "user-account",
+                    "user_id": "user12345",
+                    "account_type": "subscriber",
+                    "display_name": "John Doe",
+                    "description": "Subscriber receiving the SMS"
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "start": "2024-12-12T15:04:45.000Z",
+                    "end": "2024-12-12T15:04:45.500Z",
+                    "is_active": false,
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "protocols": ["ip", "udp"],
+                    "src_port": 5060,
+                    "dst_port": 2152,
+                    "description": "Delivery of SMS over the 5G control plane"
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "attaquant",
+                    "account_login": "attaquant"
+                },
+                "5": {
+                    "type": "domain-name",
+                    "value": "site.douteux.com"
+                },
+                "6": {
+                    "type": "url",
+                    "value": "https://jetehack.fr"
+                }
+            }
+        }
+    ]
+}

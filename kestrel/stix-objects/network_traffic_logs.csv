@@ -1,0 +1,6 @@
+timestamp,source_ip,destination_ip,traffic_volume,traffic_pattern
+2024-11-21T10:00:00,192.168.1.10,203.0.113.10,500MB,coordinated_ddos
+2024-11-21T10:01:00,192.168.1.11,203.0.113.11,50MB,normal
+2024-11-21T10:02:00,192.168.1.12,203.0.113.12,600MB,coordinated_ddos
+2024-11-21T10:03:00,192.168.1.13,203.0.113.13,10MB,normal
+2024-11-21T10:04:00,192.168.1.14,203.0.113.14,550MB,coordinated_ddos

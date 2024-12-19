@@ -1,0 +1,2 @@
+sms_data = GET process FROM stixshifter://local_stix WHERE file.path = "sms_logs_stix_1.json"
+
