@@ -1,6 +1,0 @@
-timestamp,source_ip,query,query_rate,destination_dns_server,domain_behavior
-2024-11-21T10:00:00,192.168.1.10,suspicious-domain.com,150,8.8.8.8,suspicious
-2024-11-21T10:01:00,192.168.1.11,legitimate-domain.com,10,192.168.1.1,normal
-2024-11-21T10:02:00,192.168.1.12,dga-domain.abc,300,8.8.4.4,suspicious
-2024-11-21T10:03:00,192.168.1.13,encrypted-dns.example,20,1.1.1.1,normal
-2024-11-21T10:04:00,192.168.1.14,dga-domain.def,250,8.8.8.8,suspicious

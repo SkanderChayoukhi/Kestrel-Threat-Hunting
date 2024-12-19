@@ -1,5 +1,0 @@
-inventory:
-- source: DirectOwners
-  isProduction: false 
-  items:
-  - id: marioh@microsoft.com

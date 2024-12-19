@@ -1,6 +1,0 @@
-timestamp,sender,receiver,message_content,phone_number_range
-2024-11-21T10:00:00,+12345678901,+12345000123,Click here: http://malicious.link/abc,12345000-12345999
-2024-11-21T10:01:00,+12345678902,+12345000124,You won a prize! Visit http://bit.ly/xyz,12345000-12345999
-2024-11-21T10:02:00,+12345678901,+12345000125,"Hello, check this out: http://fake.url",12345000-12345999
-2024-11-21T10:03:00,+12345678903,+12345000126,Your package is delayed: http://malicious.link/xyz,12345000-12345999
-2024-11-21T10:04:00,+12345678901,+12345000127,Hello there!,12345000-12345999

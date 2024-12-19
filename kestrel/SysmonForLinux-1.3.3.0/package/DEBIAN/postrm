@@ -1,4 +1,0 @@
-#!/bin/sh
-
-if [ -d /opt/sysmon ]; then rm -rf /opt/sysmon; fi
-

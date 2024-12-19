@@ -1,3 +1,0 @@
-[submodule "sysmonCommon"]
-	path = sysmonCommon
-	url = https://github.com/Sysinternals/SysmonCommon.git
